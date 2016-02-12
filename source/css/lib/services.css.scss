@@ -1,0 +1,73 @@
+@import 'colors';
+@import 'functions';
+
+section#services{
+	background:$calipso;
+	color:white;
+	h2,h3, h4{
+		color:white;
+	}
+	h3{
+		margin: 40px 0;
+	}
+	h4{
+		margin: 40px 0 10px 0;
+	}
+	p{
+		strong{
+			&:before{
+				content: "";
+				width:40px;
+				height:1px;
+				background: white;
+				display: inline-block;
+				position: relative;
+				top: -3px;
+				margin-right:8px;
+			}
+			&:after{
+				content: "";
+				width:40px;
+				height:1px;
+				background: white;
+				display: inline-block;
+				position: relative;
+				top: -3px;
+				margin-left:8px;
+			}
+		}
+	}
+	.nav-tabs > li{
+		
+		a{
+			@include transition(all .2s ease);
+			font-family: 'Open Sans Condensed', sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			border:none;
+			color:$lgrey;
+			background: $red;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			margin: 20px 30px 0 30px;
+			border-bottom: 3px solid darken($red, 20);
+			@media( min-width: 768px ){
+				margin: 0 30px 0 30px;
+			}
+			&:hover{
+				background: darken($red, 20);
+				color:white;
+			}
+		}
+
+		&.active{
+			a{
+				color:white;
+				background: darken($red, 20);
+
+			}
+			
+		}
+	}
+}
