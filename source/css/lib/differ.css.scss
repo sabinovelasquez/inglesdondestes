@@ -11,6 +11,9 @@
 		font-weight: 300;
 		border-bottom: 1px $dark dashed;
 		padding: 0 0 10px 0;
+		&.last{
+			border-bottom: none;
+		}
 	}
 	.anim{
 		height: 270px;

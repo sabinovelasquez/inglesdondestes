@@ -15,12 +15,18 @@ header{
 		width: 180px;
 		height: 149px;
 		left: 50%;
-		top: 120px;
+		top: 50px;
 		margin-left: -90px;
 		position: absolute;
+		@media( min-width: 768px ){
+			top: 120px;
+		}
 	}
 	.sub{
-		padding-top: 270px;
+		padding-top: 220px;
+		@media( min-width: 768px ){
+			padding-top: 270px;
+		}
 		color:white;
 		h1{
 			font-weight: 300;
