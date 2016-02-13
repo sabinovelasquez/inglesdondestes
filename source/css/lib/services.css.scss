@@ -27,6 +27,9 @@ section#services{
 				position: relative;
 				top: -3px;
 				margin-right:8px;
+				@media( max-width: 400px ){
+					display: none;
+				}
 			}
 			&:after{
 				content: "";
@@ -37,6 +40,9 @@ section#services{
 				position: relative;
 				top: -3px;
 				margin-left:8px;
+				@media( max-width: 400px ){
+					display: none;
+				}
 			}
 		}
 	}

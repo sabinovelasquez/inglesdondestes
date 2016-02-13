@@ -16,4 +16,16 @@ section#work{
 			background: $red;
 		}
 	}
+	.embed-responsive{
+		margin-bottom: 20px;
+		@media( min-width: 768px ){
+			margin-bottom: 0px;
+		}
+	}
+	p{
+		min-height: 180px;
+		@media( min-width: 768px ){
+			min-height: 80px;
+		}
+	}
 }
