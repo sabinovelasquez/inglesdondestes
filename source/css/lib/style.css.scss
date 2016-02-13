@@ -3,12 +3,12 @@
 @import 'header';
 @import 'about';
 @import 'differ';
-@import 'team';
+@import 'work';
 @import 'services';
 @import 'footer';
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background: $lgrey;
 	::-moz-selection { /* Code for Firefox */
 		color: white;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5{
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	margin: 10px 0 30px;
-	font-weight: 700;
+	font-weight: 300;
 	color:$dark;
 	
 

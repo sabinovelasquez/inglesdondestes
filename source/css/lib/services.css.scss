@@ -9,11 +9,14 @@ section#services{
 	}
 	h3{
 		margin: 40px 0;
+		font-size: 1.8em;
 	}
 	h4{
-		margin: 40px 0 10px 0;
+		margin: 40px 0 20px 0;
+		font-size: 1.7em;
 	}
 	p{
+
 		strong{
 			&:before{
 				content: "";
@@ -43,7 +46,8 @@ section#services{
 			@include transition(all .2s ease);
 			font-family: 'Open Sans Condensed', sans-serif;
 			text-transform: uppercase;
-			font-weight: 700;
+			font-weight: 300;
+			font-size: 1.2em;
 			border:none;
 			color:$lgrey;
 			background: $red;

@@ -27,7 +27,7 @@ case ENV['TARGET'].to_s.downcase
       deploy.method = :rsync
       deploy.build_before = true
       deploy.host = '45.55.240.255'
-      deploy.path = '/var/www/inglesdondestes.cl/public_html/preview/'
+      deploy.path = '/var/www/inglesdondestes.cl/public_html/'
     end
   else
     activate :deploy do |deploy|

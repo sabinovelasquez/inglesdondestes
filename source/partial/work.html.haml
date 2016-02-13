@@ -1,0 +1,28 @@
+%section#work
+	.container
+		.row
+			%h2.text-center
+				Nuestro Trabajo
+			%h3.text-center
+				Locuciones
+			.col-sm-6
+				.embed-responsive.embed-responsive-16by9
+					%iframe.embed-responsive-item{ :'src' => 'https://player.vimeo.com/video/59173409?color=14B6A0&byline=0&portrait=0', :'frameborder' => '0', :'webkitallowfullscreen' => 'webkitallowfullscreen', :'mozallowfullscreen' => 'mozallowfullscreen', :'allowfullscreen' => 'allowfullscreen' }
+			.col-sm-6
+				.embed-responsive.embed-responsive-16by9
+					%iframe.embed-responsive-item{ :'src' => 'https://player.vimeo.com/video/82922562?color=14B6A0&byline=0&portrait=0', :'frameborder' => '0', :'webkitallowfullscreen' => 'webkitallowfullscreen', :'mozallowfullscreen' => 'mozallowfullscreen', :'allowfullscreen' => 'allowfullscreen' }
+			.col-sm-12
+				%h3.text-center
+					Nuestros clientes dicen:
+			.col-sm-12
+				.car{ :'uib-carousel interval' => '10000', :'no-wrap' => 'false', :'ng-cloak' => 'ng-cloak' }
+					%uib-slide{ :'active' => 'slide.active' }
+						%p.text-center
+							"Gracias a <strong>Inglés Donde Estés</strong>, pude contar con un espacio de conversación que se ajustara a mis requerimientos de horarios. Esa flexibilidad, junto con el profesionalismo de su equipo, son un complemento perfecto para ir perfeccionando el manejo del inglés."
+							%br
+							%small.text-center Francisco Reveco, Cliodinámica
+					%uib-slide
+						%p.text-center
+							"Los servicios de traducción que les hemos solicitado han funcionado súper bien, rápidos y con una traducción fiel e interpretativa en las ideas más complejas. De lo que hemos trabajado con ellos, todo perfect."
+							%br
+							%small.text-center Álvaro Venegas, N11
