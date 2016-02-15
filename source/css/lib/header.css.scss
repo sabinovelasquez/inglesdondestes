@@ -58,4 +58,54 @@ header{
 	.carousel-indicators, .carousel-control{
 		display: none;
 	}
+	.ribbon {
+		position: absolute;
+		right:30px;
+		background: $red;
+		color:white;
+		border-left: 1px dashed $yellow;
+		border-right: 1px dashed $yellow;
+		border-radius: 5px 5px 0 0;
+		box-shadow: 5px 0 0 $red,
+								-5px 0 0 $red;
+		height: 120px;
+		margin: 0 5px;
+		width: 90px;
+		-webkit-filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.4));
+		@media( max-width: 600px ){
+			right:10px;
+			width: 60px;
+			height: 90px;
+		}
+		p.hiring{
+			color:$yellow;
+			font-family: 'Open Sans Condensed', sans-serif;
+			text-transform: uppercase;
+			margin-top: 15px;
+			font-size: 2em;
+			text-align: center;
+			@media( max-width: 600px ){
+				margin-top: 25px;
+				font-size: 1.3em;
+			}
+		}
+	}
+	.ribbon:after,
+	.ribbon:before {
+		border-top: 15px solid $red;
+		content: '';
+		height: 0;
+		position: absolute;
+		top: 100%;
+		width: 0;
+	}
+	.ribbon:after {
+		border-left: 50px solid transparent;
+		right: -6px;
+	}
+	.ribbon:before {
+		border-right: 50px solid transparent;
+		left: -6px;
+	}
+
 }
