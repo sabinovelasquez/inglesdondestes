@@ -1,4 +1,4 @@
-%section#services
+%section#services{ :'analytics-on' => 'scrollby', :'analytics-category' => 'scroll' }
 	.container
 		.row
 			%h2.text-center
@@ -6,7 +6,7 @@
 
 			.col-sm.12
 				%uib-tabset{ :'justified' => 'true' }
-					%uib-tab{ :'heading' => 'Clases' }
+					%uib-tab{ :'heading' => 'Clases', :'analytics-on' => 'click', :'analytics-event' => 'Clases', :'analytics-category' => 'services' }
 						.container
 							%h3.text-center
 								Clases
@@ -22,7 +22,7 @@
 								%strong	Conversación
 							%p.text-center
 								%strong	Mejorar Pronunciación
-					%uib-tab{ :'heading' => 'Traducciones' }
+					%uib-tab{ :'heading' => 'Traducciones', :'analytics-event' => 'Traducciones', :'analytics-category' => 'services' }
 						.container
 							%h3.text-center
 								Traducciones
@@ -37,7 +37,7 @@
 							%p.text-center
 								%strong Confidencialidad
 							
-					%uib-tab{ :'heading' => 'Tareas específicas' }
+					%uib-tab{ :'heading' => 'Tareas específicas', :'analytics-event' => 'Tareas específicas', :'analytics-category' => 'services' }
 						.container
 							%h3.text-center
 								Tareas específicas

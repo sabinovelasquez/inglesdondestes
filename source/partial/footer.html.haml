@@ -1,25 +1,25 @@
-%footer
+%footer#footer{ :'analytics-on' => 'scrollby', :'analytics-category' => 'scroll' }
 	.container
 		.row
 			%h2.text-center
 				Contáctanos!
 			.col-sm-4
-				%a{ :'href' => 'https://www.facebook.com/inglesdondestes/', :'target' => '_blank' }
+				%a{ :'href' => 'https://www.facebook.com/inglesdondestes/', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'go to fanpage', :'analytics-category' => 'sociales'  }
 					.icon.fb.text-center
 						%i.fa.fa-facebook
-				%p.text-center
+				%p.link.text-center
 					http://on.fb.me/1TW5hFx
 			.col-sm-4
-				%a{ :'href' => 'whatsapp://send?abid=+56984292584&text=Hey%20There!', :'target' => '_blank' }
+				%a{ :'href' => 'whatsapp://send?abid=+56984292584&text=Hey%20There!', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'go to whatsapp', :'analytics-category' => 'sociales' }
 					.icon.ws.text-center
 						%i.fa.fa-whatsapp
-				%p.text-center
+				%p.link.text-center
 					(+56) 9 84292584
 			.col-sm-4
-				%a{ :'href' => 'mailto:ximena@inglesdondestes.cl' }
+				%a{ :'href' => 'mailto:ximena@inglesdondestes.cl', :'analytics-on' => 'click', :'analytics-event' => 'click on email', :'analytics-category' => 'contact' }
 					.icon.google.text-center
 						%i.fa.fa-envelope
-				%p.text-center
+				%p.link.text-center
 					ximena(at)inglesdondestes.cl
 	%p.sign.text-center
 		%small
@@ -27,11 +27,11 @@
 		%br
 		%small
 			Icons made by 
-			%a{ :'href' => 'http://www.freepik.com', :'target' => '_blank' }
+			%a{ :'href' => 'http://www.freepik.com', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'click on Freepik', :'analytics-category' => 'footer' }
 				Freepik
 			from
-			%a{ :'href' => 'http://www.flaticon.com', :'target' => '_blank' }
+			%a{ :'href' => 'http://www.flaticon.com', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'click on Flaticons', :'analytics-category' => 'footer' }
 				www.flaticon.com. 
 			Licensed by
-			%a{ :'href' => 'http://creativecommons.org/licenses/by/3.0/', :'target' => '_blank' }
+			%a{ :'href' => 'http://creativecommons.org/licenses/by/3.0/', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'click on CC3', :'analytics-category' => 'footer' }
 				CC BY 3.0

@@ -5,5 +5,12 @@
 //=require vendor/angular/angular-parallax
 //=require vendor/angular/angular-scroll.min
 //=require vendor/angular/angular-touch.min
+
+//=require vendor/noframework.waypoints.min
+//=require vendor/angulartics
+//=require vendor/angulartics-google-analytics
+//=require vendor/angulartics-scroll.min
+//=require vendor/analytics
+
 //= require underscore
 //= require_tree ./lib

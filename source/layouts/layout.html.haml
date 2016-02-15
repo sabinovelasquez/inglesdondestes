@@ -35,7 +35,7 @@
       = current_page.data.title || 'Title'
     = stylesheet_link_tag 'all'
 
-  %body
+  %body{ :'ng-controller' => 'gralCtrl' }
     = yield
     = javascript_include_tag 'all'
 

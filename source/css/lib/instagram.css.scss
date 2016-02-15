@@ -1,36 +1,58 @@
 @import 'colors';
 @import 'functions';
 
-footer{
-	background: $dark;
-	color:white;
-	padding:80px 0 0px 0!important;
-	a{
-		color:$yellow;
-		&:hover{
-			color:$yellow;
+#instagram{
+	img{
+		min-width: 100%;
+	}
+	.insta {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.insta:before {
+		opacity: .6;
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: 20px;
+		width: 50%;
+		top: 80%;
+		max-width: 300px;
+		background: #777;
+		box-shadow: 0 15px 10px #777;
+		left: 20px;
+		transform: rotate(-3deg); 
+	}
+	.insta:after {
+		opacity: .6;
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: 20px;
+		width: 50%;
+		top: 80%;
+		max-width: 300px;
+		background: #777;
+		box-shadow: 0 15px 10px #777;
+		right: 20px;
+		transform: rotate(3deg);
+	}
+
+	p.caption{
+		background: white;
+		padding: 5px;
+		min-height: 60px;
+		@media( min-width: 768px ){
+			min-height: 80px;
 		}
 	}
-	.sign{
-		padding: 15px 0;
-		margin-top: 40px;
-		margin-bottom: 0px;
-		background: darken($dark, 20);
-	}
-	h2{
-		color:white;
-	}
-	a{
+	a.inst{
 		float: left;
 		width: 80px;
 		left: 50%;
 		position: relative;
 		margin-left: -40px;
 		color:white;
-	}
-	p.link{
-		width: 100%;
-		float: left;
 	}
 	.icon{
 		@include transition(all .2s ease);
@@ -59,15 +81,10 @@ footer{
                0 20px 20px rgba(0,0,0,.15);
 		}
 		&:hover{
-			&.fb{
-				background:$fb;
-			}
-			&.ws{
-				background:$ws;
-			}
-			&.google{
-				background:$google;
+			&.insta{
+				background:$inst;
 			}
 		}
 	}
 }
+
