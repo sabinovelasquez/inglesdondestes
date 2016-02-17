@@ -8,7 +8,7 @@
 				%a{ :'href' => '{{photo.link}}', :'target' => '_blank', :'analytics-on' => 'click', :'analytics-event' => 'instagram click: {{photo.caption.text}}', :'analytics-category' => 'instagram' }
 					%img.img-responsive{ :'ng-src' => '{{photo.images.standard_resolution.url}}' }
 				%p.caption.text-center 
-					%small {{photo.caption.text}}
+					%small {{photo.caption.text |truncate:150:" (...)" }}
 			.col-sm-12
 				%a.inst{ :'href' => 'https://www.instagram.com/inglesdondestes/', :'target' => '_blank', :'analytics-event' => 'go to instagram', :'analytics-category' => 'sociales'  }
 					.icon.insta.text-center

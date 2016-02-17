@@ -1,14 +1,7 @@
 'use strict';
 var app = angular
 
-	.module('app', ['ngAnimate','ui.bootstrap', 'angular-parallax', 'duScroll', 'ngTouch', 'angulartics', 'angulartics.google.analytics', 'angulartics.scroll'])
-	
-
-  .controller('gralCtrl', [ '$scope', '$http',
-    function($scope) {
-      console.log('init');
-    }
-  ])
+	.module('app', ['ngAnimate', 'filters', 'ui.bootstrap', 'angular-parallax', 'duScroll', 'ngTouch', 'angulartics', 'angulartics.google.analytics', 'angulartics.scroll'])
 
 	.controller('instagramCtrl', [ '$scope', '$http',
     function($scope, $http) {
@@ -16,7 +9,6 @@ var app = angular
       $http.jsonp( instagram_json )
         .success(function(response) {
           $scope.photos = response.data;
-          console.log($scope.photos);
         });
     }
   ]);
